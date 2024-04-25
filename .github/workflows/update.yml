@@ -43,5 +43,6 @@ jobs:
       if: ${{ success() }}
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
+        commit_author: Author <actions@github.com> 
         commit_message: "Bump Spicetify Packages"
         file_pattern: "pkgs/_sources/"
